@@ -1,0 +1,183 @@
+[gd_scene load_steps=8 format=3 uid="uid://pwu2j7did6b8"]
+
+[ext_resource type="Script" uid="uid://cp67sn44lfk1y" path="res://scripts/slot_grid.gd" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://b1iyp8rw4ukjc" path="res://scripts/slot_button.gd" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://bmnppcm03kbpq" path="res://scripts/win_label.gd" id="3_feb5d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e2o6t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwb40"]
+content_margin_left = 25.0
+content_margin_top = 25.0
+content_margin_right = 25.0
+content_margin_bottom = 25.0
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_80nbo"]
+bg_color = Color(0.18039216, 0.18039216, 0.18039216, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_e2o6t"]
+font_size = 32
+
+[node name="Control" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_e2o6t")
+
+[node name="GameContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mwb40")
+
+[node name="SlotGrid" type="GridContainer" parent="GameContainer"]
+layout_mode = 2
+columns = 3
+script = ExtResource("1_e2o6t")
+
+[node name="Slot1" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+
+[node name="Slot2" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+col = 1
+
+[node name="Slot3" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+col = 2
+
+[node name="Slot4" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+row = 1
+
+[node name="Slot5" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+row = 1
+col = 1
+
+[node name="Slot6" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+row = 1
+col = 2
+
+[node name="Slot7" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+row = 2
+
+[node name="Slot8" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+row = 2
+col = 1
+
+[node name="Slot9" type="Button" parent="GameContainer/SlotGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_80nbo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_80nbo")
+script = ExtResource("2_e2o6t")
+row = 2
+col = 2
+
+[node name="WinLabel" type="Label" parent="."]
+visible = false
+layout_mode = 2
+size_flags_vertical = 1
+mouse_default_cursor_shape = 2
+text = "X wins!"
+label_settings = SubResource("LabelSettings_e2o6t")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_feb5d")
+metadata/_edit_lock_ = true
